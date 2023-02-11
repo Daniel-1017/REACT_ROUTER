@@ -37,6 +37,10 @@ p {
   color: #fff;
 }
 
+a {
+  color: var(--color-primary-500);
+}
+
 .content {
   margin: 2rem auto;
   text-align: center;
