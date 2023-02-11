@@ -1,25 +1,29 @@
-import React, { Fragment } from "react"
-import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
 
-const EVENTS = [
-  { id: "e1", title: "Event 1" },
-  { id: "e2", title: "Event 2" },
-  { id: "e3", title: "Event 3" },
-]
+import EventsList from "../components/EventsList"
 
-const EventsPage = () => {
+function EventsPage() {
+  const [isLoading, setIsLoading] = useState(false)
+  const [fetchedEvents, setFetchedEvents] = useState()
+  const [error, setError] = useState()
+
+  useEffect(() => {
+    async function fetchEvents() {
+      setIsLoading(true)
+
+      setIsLoading(false)
+    }
+
+    fetchEvents()
+  }, [])
   return (
-    <Fragment>
-      <main>
-        <ul>
-          {EVENTS.map(event => (
-            <li>
-              <Link to={`/events/${event.id}`}>{event.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </main>
-    </Fragment>
+    <>
+      <div style={{ textAlign: "center" }}>
+        {isLoading && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+      </div>
+      {!isLoading && fetchedEvents && <EventsList events={fetchedEvents} />}
+    </>
   )
 }
 
