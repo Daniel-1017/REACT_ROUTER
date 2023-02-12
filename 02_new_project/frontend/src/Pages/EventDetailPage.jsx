@@ -10,7 +10,7 @@ const EventDetailPage = () => {
 
 export default EventDetailPage
 
-export const loader = async ({ req, params }) => {
+export const loader = async ({ request, params }) => {
   const res = await fetch("http://localhost:8080/events/" + params.id)
 
   if (!res.ok) {
