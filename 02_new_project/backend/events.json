@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"asdf","image":"https://www.eventbookings.com/wp-content/uploads/2018/11/summer-event-ideas-eventbookings.jpg","date":"2023-02-14","description":"asgagasd","id":"59b40828-a5e8-4b94-bb1c-864737d4a7f8"},{"title":"asdf","image":"https://www.eventbookings.com/wp-content/uploads/2018/11/summer-event-ideas-eventbookings.jpg","date":"2023-02-08","description":"asdgasdga","id":"16863022-3203-42e2-a941-f985c9830707"},{"title":"asdg","image":"https://www.eventbookings.com/wp-content/uploads/2018/11/summer-event-ideas-eventbookings.jpg","date":"2023-02-10","description":"asg","id":"83f7cb8c-6c53-41df-b4aa-81b73cce2f69"},{"title":"asd","image":"https://www.eventbookings.com/wp-content/uploads/2018/11/summer-event-ideas-eventbookings.jpg","date":"2023-02-01","description":"asgd","id":"076d0a12-9e28-4137-bb22-a4f19fded3c2"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
