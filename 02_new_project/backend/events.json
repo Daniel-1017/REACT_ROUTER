@@ -1,48 +1,6 @@
 {
   "events": [
     {
-      "title": "asdgfa",
-      "image": "https://images.sharefaith.com/images/3/1496337624300_2/slide-02.jpg",
-      "date": "2023-02-07",
-      "description": "asdgasdg",
-      "id": "d3d8f1a5-3587-4f19-a50a-5039bb52ddb1"
-    },
-    {
-      "title": "asdg",
-      "image": "https://images.sharefaith.com/images/3/1496337624300_2/slide-02.jpg",
-      "date": "2023-02-11",
-      "description": "asgd",
-      "id": "0d11fe1c-4893-42e5-90bd-abe161da3c4c"
-    },
-    {
-      "title": "asgas",
-      "image": "https://images.sharefaith.com/images/3/1496337624300_2/slide-02.jpg",
-      "date": "2023-02-08",
-      "description": "sadgasdg",
-      "id": "4bcc4cad-b83a-413f-a4f7-debbdca35ad5"
-    },
-    {
-      "title": "asg",
-      "image": "https://images.sharefaith.com/images/3/1496337624300_2/slide-02.jpg",
-      "date": "2023-02-08",
-      "description": "asdgasg",
-      "id": "ad9d333f-4177-47c0-87b2-4f32d0859673"
-    },
-    {
-      "title": "Summer Event 2023",
-      "image": "https://images.sharefaith.com/images/3/1496337624300_2/slide-02.jpg",
-      "date": "2023-06-15",
-      "description": "Amazing summer event in Jamaica",
-      "id": "ff013757-3c0c-4b93-b50b-4da8272aa4d7"
-    },
-    {
-      "title": "asdgasgd",
-      "image": "https://images.sharefaith.com/images/3/1496337624300_2/slide-02.jpg",
-      "date": "2023-02-11",
-      "description": "asdgas",
-      "id": "3bf34b8e-3504-415c-98b5-fa883f9871fa"
-    },
-    {
       "id": "e1",
       "title": "A dummy event",
       "date": "2023-02-22",
