@@ -3,12 +3,13 @@ import {
   useNavigate,
   useNavigation,
   useActionData,
-  Link,
+  json,
+  redirect,
 } from "react-router-dom"
 
 import classes from "./EventForm.module.css"
 
-function EventForm({ event }) {
+function EventForm({ method, event }) {
   const data = useActionData()
   const navigation = useNavigation()
 
@@ -20,7 +21,7 @@ function EventForm({ event }) {
   const isSubmitting = navigation.state === "submitting"
 
   return (
-    <Form method="post" action="/events/new" className={classes.form}>
+    <Form method={method} className={classes.form}>
       {data && data.errors && (
         <ul>
           {Object.values(data.errors).map(err => (
@@ -81,3 +82,38 @@ function EventForm({ event }) {
 }
 
 export default EventForm
+
+export async function action({ request, params }) {
+  const method = request.method
+  const data = await request.formData()
+
+  const eventData = {
+    title: data.get("title"),
+    image: data.get("image"),
+    date: data.get("date"),
+    description: data.get("description"),
+  }
+
+  let url = "http://localhost:8080/events"
+
+  if (method === "PATCH" || method === "patch") {
+    const { id } = params
+    url = "http://localhost:8080/events/" + id
+  }
+
+  const res = await fetch(url, {
+    method: method,
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(eventData),
+  })
+
+  if (res.status === 422) {
+    return res
+  }
+
+  if (!res.ok) {
+    throw json({ message: "Could not save event." }, { status: 500 })
+  }
+
+  return redirect("/events")
+}
